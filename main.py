@@ -32,8 +32,6 @@ def api_call(conversation):
     return response
 
 
-# your functions and code here
-
 
 def get_input(data):
     system_prompt = {
