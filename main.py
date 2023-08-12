@@ -50,9 +50,7 @@ Communication: Publishing the findings in a scientific journal or other venue so
 Reiteration: If the results call the original hypothesis into question, the process may start again with a new hypothesis.
 Replication: Other researchers attempt to replicate the findings to see if they hold true in different circumstances or under slightly different conditions. Replication is essential for establishing the validity and reliability of scientific findings.
 
-Because we will operate in a contained environment we will only conduct the observation, questioning, and hypothesis formation steps. You may move between these steps freely as you formulate your ideas but please complete the task with a hypothesis. 
-
-At each step (observation, questioning, hypothesis), include your current thinking as well as what action you will take next to continue to improve your hypothesis. See an example below. 
+At each step (observation, questioning, hypothesis, etc.), include your current thinking as well as consider what action you will take next to continue to improve your hypothesis. See an example below. 
 
 __
 Phenomenon: You drop a feather and a hammer on earth. The hammer hits the ground first.
@@ -60,9 +58,26 @@ Phenomenon: You drop a feather and a hammer on earth. The hammer hits the ground
 { 
     "observation": "The feather drops slower than the hammer in earths gravity.",
     "thought": "There must be a difference between the feather and the hammer. I wonder if other factors could be at play."
-    "action": "I will drop the feather and hammer in a vacuum to see if the results are the same."
-}
+    "action": ["NONE"]
+}, 
+{
+    "question": "What could I change about the experiment which may lead to new findings. ", 
+    "thought": "There must be some way to discover more about the factors", 
+    "action": ["NONE"]
+}, 
+{
+    "question": "Maybe I could drop something heavier than the hammer. I wonder if something heavier than a hammer would fall faster than a hammer.", 
+    "thought": "I'll weigh my 16 inch Macbook and confirm it is heaver than a hammer and then I can drop them together.", 
+    "action": ["WEIGH MACBOOK", "WEIGH HAMMER", "DROP MACBOOK AND HAMMER", "COMPARE"]
+},
+{
+    "question": "Maybe I could drop something heavier than the hammer. I wonder if something heavier than a hammer would fall faster than a hammer.", 
+    "thought": "I'll weigh my 16 inch Macbook and confirm it is heaver than a hammer and then I can drop them together.", 
+    "action": ["WEIGH MACBOOK", "WEIGH HAMMER", "DROP MACBOOK AND HAMMER", "COMPARE"]
+},
 
+
+"decision": "I will drop the feather and hammer in a vacuum to see if the results are the same."
 """
     system_prompt = {
         "role": "system",
